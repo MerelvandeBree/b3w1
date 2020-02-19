@@ -1,5 +1,5 @@
 <?php 
-		date_default_timezone_set('Europe/Amsterdam');
+		date_default_timezone_set('Africa/Cairo');
 
 		$tijd = date("H:i");
 		$tijdstip = date("H");
@@ -12,12 +12,12 @@
 			echo "<h1>Goede middag</h1>";
 			$achtergrond = "goedemiddag";
 		}
-		elseif ($tijdstip >= 18 && $tijdstip < 0) {
-			echo "Goede avond";
+		elseif ($tijdstip >= 18 && $tijdstip <= 23) {
+			echo "<h1>Goede avond</h1>";
 			$achtergrond = "goedeavond";
 		}
 		elseif ($tijdstip >= 0 && $tijdstip < 6) {
-			echo "Goede nacht";
+			echo "<h1>Goede nacht</h1>";
 			$achtergrond = "goedenacht";
 		}
 
